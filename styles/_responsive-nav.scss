@@ -1,0 +1,27 @@
+@use 'variables';
+
+.nav {
+    overflow: hidden;
+    color: variables.$font-color;
+    align-items: center;
+    display: flex;
+    font-family: variables.$text;
+    justify-content: space-between;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: variables.$font-color;
+    text-align: center;
+    padding: .8rem 1rem;
+    text-decoration: none;
+    transition: all .2s ease;
+    &:hover, &:active {
+        color: orange;
+    }
+}
+
+a.icon {
+    display: none;
+}

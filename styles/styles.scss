@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'breakpoints';
+@import 'logo';
+@import 'responsive-nav';
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: $background;
+    font-style: normal;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    height: 100vh;
+    width: 100%;
+}
+
+
+.text {
+    &__title {
+        font-family: $heading;
+        font-weight: 500;
+    }
+    &__text {
+        font-family: $text;
+    }
+}
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}

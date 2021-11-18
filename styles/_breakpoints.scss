@@ -1,0 +1,276 @@
+@use 'variables';
+
+
+@media screen and (max-width: 424px) {
+    .nav {
+        grid-column: 2 / span 8;
+        grid-row: 1 / span 1;
+    }
+    .text {
+        grid-column: 2 / span 8;
+        grid-row: 3 / span 3;
+        padding-top: 13%;
+        text-align: center;
+
+        &__title {
+            font-size: 36px;
+            letter-spacing: -0.8px;
+            line-height: 39.6px;
+            margin-bottom: 6%;
+            }
+        &__text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1%;
+            width: 90%;
+            }
+    }
+    .image {
+        background-image: url(/images/soup-mobile.png);
+        grid-column: 2 / span 8;
+        grid-row: 6 / span 5;
+    }
+
+    .arrow {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 600px) {
+    .nav {
+        grid-column: 2 / span 8;
+        grid-row: 1 / span 1;
+    }
+    .nav a:not(.nav__logo, .icon) {
+        display: none;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .nav .responsive {
+        position: relative;
+        & a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+    .text {
+        grid-column: 2 / span 8;
+        grid-row: 3 / span 3;
+        padding-top: 13%;
+        text-align: center;
+
+        &__title {
+            font-size: 36px;
+            letter-spacing: -0.8px;
+            line-height: 39.6px;
+            margin-bottom: 6%;
+            }
+        &__text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1%;
+            width: 80%;
+            }
+    }
+
+    .image {
+        background-image: url(/images/soup-tablet.png);
+        grid-column: 2 / span 8;
+        grid-row: 7 / span 5;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .text {
+        grid-column: 2 / span 8;
+        grid-row: 3 / span 3;
+        padding-top: 13%;
+        text-align: center;
+
+        &__title {
+            font-size: 42px;
+            letter-spacing: -0.8px;
+            line-height: 39.6px;
+            margin-bottom: 6%;
+            }
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1%;
+            width: 90%;
+            }
+    }
+
+    .image {
+        background-image: url(/images/soup-tablet.png);
+        grid-column: 2 / span 8;
+        grid-row: 7 / span 5;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+        grid-column: 2 / span 8;
+        grid-row: 2 / span 1;
+    }
+    .text {
+        grid-column: 2 / span 8;
+        grid-row: 3 / span 4;
+        padding-top: 13%;
+        text-align: center;
+
+        &__title {
+            font-size: 42px;
+            letter-spacing: -0.8px;
+            line-height: 42px;
+            margin-bottom: 6%;
+            }
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1%;
+            width: 90%;
+            }
+    }
+
+    .image {
+        background-image: url(/images/soup-desktop.png);
+        grid-column: 2 / span 8;
+        grid-row: 7 / span 5;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .nav {
+        grid-column: 2 / span 4;
+        grid-row: 2 / span 1;
+    }
+    .text {
+        grid-column: 2 / span 4;
+        grid-row: 4 / span 4;
+        padding-top: 13%;
+        text-align: center;
+
+        &__title {
+            font-size: 42px;
+            letter-spacing: -0.8px;
+            line-height: 42px;
+            margin-bottom: 6%;
+            }
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1%;
+            width: 90%;
+            }
+    }
+
+    .image {
+                background-image: url(/images/soup-desktop.png);
+                grid-column: 6 / span 4;
+                grid-row: 2 / span 8;
+            }
+             .arrow {
+                align-items: flex-end;
+                bottom: -2%;
+                display: flex;
+                grid-column: 2 / span 1;
+                grid-row: 9 / span 1;
+                justify-content: center;
+                left: 1%;
+                max-width: 42px;
+                position: relative;
+                visibility: visible;
+                &__icon {
+                    color: variables.$arrow;
+                    font-size: 58px;
+                }
+            }
+}
+
+@media screen and (min-width: 1440px) {
+    .nav {
+        grid-column: 2 / span 4;
+        grid-row: 2 / span 1;
+        padding-right: 1.2rem;
+    }
+    .text {
+        grid-column: 2 / span 4;
+        grid-row: 4 / span 4;
+        padding-top: 13%;
+        text-align: center;
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+
+        &__title {
+            font-size: 42px;
+            letter-spacing: -0.8px;
+            line-height: 42px;
+            margin-bottom: 6%;
+            }
+        &__text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1%;
+            width: 80%;
+            }
+    }
+
+    .image {
+                background-image: url(/images/soup-desktop.png);
+                grid-column: 6 / span 4;
+                grid-row: 2 / span 8;
+            }
+             .arrow {
+                align-items: flex-end;
+                bottom: -2%;
+                display: flex;
+                grid-column: 2 / span 1;
+                grid-row: 9 / span 1;
+                justify-content: center;
+                left: 1%;
+                max-width: 42px;
+                position: relative;
+                visibility: visible;
+                &__icon {
+                    color: variables.$arrow;
+                    font-size: 58px;
+                }
+            }
+}
