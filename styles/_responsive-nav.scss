@@ -1,20 +1,20 @@
 @use 'variables';
 
 .nav {
-    overflow: hidden;
-    color: variables.$font-color;
     align-items: center;
+    color: variables.$font-color;
     display: flex;
     font-family: variables.$text;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .nav a {
-    float: left;
-    display: block;
     color: variables.$font-color;
-    text-align: center;
+    display: block;
+    float: left;
     padding: .8rem 1rem;
+    text-align: center;
     text-decoration: none;
     transition: all .2s ease;
     &:hover, &:active {

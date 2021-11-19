@@ -1,10 +1,17 @@
 @use 'variables';
 
 
-@media screen and (max-width: 424px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
     .nav {
         grid-column: 2 / span 8;
         grid-row: 1 / span 1;
+    }
+    .nav a:not(.nav__logo, .icon) {
+        display: none;
+    }
+    .nav a.icon {
+        display: block;
+        float: right;
     }
     .text {
         grid-column: 2 / span 8;
@@ -49,15 +56,15 @@
     }
 
     .nav a.icon {
-        float: right;
         display: block;
+        float: right;
     }
 
     .nav .responsive {
         position: relative;
         & a {
-            float: none;
             display: block;
+            float: none;
             text-align: left;
         }
     }
@@ -97,6 +104,10 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
+    .nav {
+        grid-column: 2 / span 8;
+        grid-row: 2 / span 1;
+    }
     .text {
         grid-column: 2 / span 8;
         grid-row: 3 / span 3;
@@ -172,8 +183,32 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     .nav {
+        align-items: center;
+        color: variables.$font-color;
+        display: flex;
+        font-family: variables.$text;
         grid-column: 2 / span 4;
         grid-row: 2 / span 1;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .nav a {
+        color: variables.$font-color;
+        display: block;
+        float: left;
+        margin-right: 0 1.5rem 0 0;
+        padding: .8rem 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        transition: all .2s ease;
+        &:hover, &:active {
+            color: orange;
+        }
+    }
+
+    a.icon {
+        display: none;
     }
     .text {
         grid-column: 2 / span 4;
@@ -230,10 +265,10 @@
     .text {
         grid-column: 2 / span 4;
         grid-row: 4 / span 4;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
         padding-top: 13%;
         text-align: center;
-        padding-right: 1.2rem;
-        padding-left: 1.2rem;
 
         &__title {
             font-size: 42px;
