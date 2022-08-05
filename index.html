@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Recipes">
-    <meta property="og:description" content="Recipes">
-    <meta property="twitter:description" content="Recipes">
-    <title>Recipes</title>
-    <script src="https://kit.fontawesome.com/9877bc6c1f.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-
-    <div class="container">
-            <nav class="nav" id="topNav">
-                <a href="#home" class="nav__logo logo active"><h1>Head.</h1></a>
-                <a href="#works" class="nav__menu--link">Works</a>
-                <a href="#services" class="nav__menu--link">Services</a>
-                <a href="#contact" class="nav__menu--link">Contacts</a>
-                <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-                    <i class="fas fa-ellipsis-h"></i>
-                </a>
-            </nav>
-
-        <section class="text">
-            <h2 class="text__title">Recipes</h2>
-            <p class="text__text">
-                Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
-                Donec viverra eleifend lacus, vitae ullamcor.
-            </p>
-        </section>
-        <div class="image"></div>
-
-        <!--Arrow is visible in desktop mode-->
-        <div class="arrow">
-            <a href="#">
-                <i class="fas fa-arrow-down arrow__icon"></i>
-            </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Recipes" />
+        <meta property="og:description" content="Recipes" />
+        <meta property="twitter:description" content="Recipes" />
+        <title>Recipes</title>
+        <script
+            src="https://kit.fontawesome.com/9877bc6c1f.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Poppins:wght@500&family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <a href="#home"><h1>Head.</h1></a>
+                </div>
+                <div class="nav">
+                    <button class="nav__btn" id="burger-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                </div>
+                <!-- Full nav menu is visible on tablet and above -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="text">
+                    <h2>Recipes</h2>
+                    <p class="text__paragraph">
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis
+                        nec. Donec viverra eleifend lacus, vitae ullamcor.
+                    </p>
+                </section>
+                <div class="img"></div>
+                <!--Arrow is only visible in desktop mode-->
+                <div class="arrow">
+                    <a href="#">
+                        <i class="fas fa-arrow-down arrow__icon"></i>
+                    </a>
+                </div>
+            </main>
         </div>
-    </div>
-    <script>
-        function burgerMenu() {
-          var burger = document.getElementById("topNav");
-          if (burger.className === "nav") {
-            burger.className += " responsive";
-          } else {
-            burger.className = "nav";
-          }
-        }
-    </script>
-</body>
+
+        <script>
+            const burgerBtn = document.getElementById('burger-btn');
+
+            burgerBtn.addEventListener('click', () => {
+                console.log(burgerBtn);
+                console.log('Yes, it works');
+            });
+            // function burgerMenu() {
+            //     var burger = document.getElementById('topNav');
+            //     if (burger.className === 'nav') {
+            //         burger.className += ' responsive';
+            //     } else {
+            //         burger.className = 'nav';
+            //     }
+            // }
+        </script>
+    </body>
 </html>
