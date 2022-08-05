@@ -1,6 +1,7 @@
 @use 'variables';
 
 .logo {
+    border: 1px solid red;
     align-items: center;
     color: variables.$font-color;
     display: flex;
