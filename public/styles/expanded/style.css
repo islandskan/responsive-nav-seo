@@ -379,6 +379,7 @@ nav.responsive {
     font-size: 22px;
     line-height: 33px;
     max-width: 410px;
+    margin: 0;
   }
   .image {
     background-image: url(/images/soup-desktop.png);
