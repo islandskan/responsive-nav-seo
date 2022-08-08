@@ -1,0 +1,17 @@
+@use 'variables' as *;
+@use 'reset';
+@use 'layout';
+@use 'responsive-nav';
+@use 'breakpoints';
+
+body {
+    background-color: #ffffff;
+    font-style: normal;
+    width: 100%;
+    min-height: 568px;
+}
+
+a {
+    text-decoration: none;
+    color: $text;
+}

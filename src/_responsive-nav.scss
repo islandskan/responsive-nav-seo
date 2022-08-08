@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as *;
 
 header {
     display: flex;
@@ -7,8 +7,8 @@ header {
     justify-content: space-between;
 }
 nav {
-    color: variables.$font-color;
-    font-family: variables.$text;
+    color: $font-color;
+    font-family: $text;
     background-color: #242635;
     position: fixed;
     top: 0;
@@ -81,16 +81,17 @@ nav {
     }
 }
 
-// .nav a {
-//     color: variables.$font-color;
-//     display: block;
-//     float: left;
-//     padding: 0.8rem 1rem;
-//     text-align: center;
-//     text-decoration: none;
-//     transition: all 0.2s ease;
-//     &:hover,
-//     &:active {
-//         color: orange;
-//     }
-// }
+.logo {
+    align-items: center;
+    color: $font-color;
+    display: flex;
+    font-family: $logo;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.25px;
+    line-height: 36px;
+    & a {
+        color: $font-color;
+        text-decoration: none;
+    }
+}
