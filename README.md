@@ -2,6 +2,10 @@
 
 The first assigment implementing a responsive navigation, based on provided design. Built for the "IT - Tech for Women" course.
 
+## Demo
+
+[Demo](https://islandskan-tech-for-women-nav.netlify.app/)
+
 ## Update
 
 > Updated the page 2022-08-08, based on feedback I got from the course.
