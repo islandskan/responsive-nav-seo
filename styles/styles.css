@@ -1,288 +1,60 @@
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .nav {
-    grid-column: 2/span 8;
-    grid-row: 1/span 1;
-  }
-  .nav a:not(.nav__logo, .icon) {
-    display: none;
-  }
-  .nav a.icon {
-    display: block;
-    float: right;
-  }
+@media (min-width: 320px) {
   .text {
-    grid-column: 2/span 8;
-    grid-row: 3/span 3;
-    padding-top: 13%;
+    grid-row: 1/span 3;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #242635;
   }
-  .text__title {
+  .text h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     font-size: 36px;
+    line-height: 40px;
     letter-spacing: -0.8px;
-    line-height: 39.6px;
-    margin-bottom: 6%;
+    margin-bottom: 15px;
   }
-  .text__text {
+  .text__paragraph {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 30px;
     font-size: 12px;
-    font-weight: 400;
     line-height: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    width: 90%;
   }
   .image {
     background-image: url(/images/soup-mobile.png);
-    grid-column: 2/span 8;
-    grid-row: 6/span 5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
   }
   .arrow {
     display: none;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 600px) {
-  .nav {
-    grid-column: 2/span 8;
-    grid-row: 1/span 1;
-  }
-  .nav a:not(.nav__logo, .icon) {
-    display: none;
-  }
-  .nav a.icon {
-    display: block;
-    float: right;
-  }
-  .nav .responsive {
-    position: relative;
-  }
-  .nav .responsive a {
-    display: block;
-    float: none;
-    text-align: left;
+@media (min-width: 768px) {
+  body {
+    min-height: 1024px;
   }
   .text {
-    grid-column: 2/span 8;
-    grid-row: 3/span 3;
-    padding-top: 13%;
-    text-align: center;
+    border: 1px solid red;
+    grid-row: 4/span 3;
   }
-  .text__title {
-    font-size: 36px;
-    letter-spacing: -0.8px;
-    line-height: 39.6px;
-    margin-bottom: 6%;
+  .text h2 {
+    font-size: 72px;
+    letter-spacing: -1.6px;
+    margin-bottom: 23px;
   }
-  .text__text {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    width: 80%;
+  .text__paragraph {
+    font-size: 22px;
+    line-height: 33px;
   }
   .image {
     background-image: url(/images/soup-tablet.png);
-    grid-column: 2/span 8;
     grid-row: 7/span 5;
-  }
-  .arrow {
-    display: none;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  .nav {
-    grid-column: 2/span 8;
-    grid-row: 2/span 1;
-  }
-  .text {
-    grid-column: 2/span 8;
-    grid-row: 3/span 3;
-    padding-top: 13%;
-    text-align: center;
-  }
-  .text__title {
-    font-size: 42px;
-    letter-spacing: -0.8px;
-    line-height: 39.6px;
-    margin-bottom: 6%;
-  }
-  .text__text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    width: 90%;
-  }
-  .image {
-    background-image: url(/images/soup-tablet.png);
-    grid-column: 2/span 8;
-    grid-row: 7/span 5;
-  }
-  .arrow {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav {
-    grid-column: 2/span 8;
-    grid-row: 2/span 1;
-  }
-  .text {
-    grid-column: 2/span 8;
-    grid-row: 3/span 4;
-    padding-top: 13%;
-    text-align: center;
-  }
-  .text__title {
-    font-size: 42px;
-    letter-spacing: -0.8px;
-    line-height: 42px;
-    margin-bottom: 6%;
-  }
-  .text__text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    width: 90%;
-  }
-  .image {
-    background-image: url(/images/soup-desktop.png);
-    grid-column: 2/span 8;
-    grid-row: 7/span 5;
-  }
-  .arrow {
-    display: none;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .nav {
-    align-items: center;
-    color: #242635;
-    display: flex;
-    font-family: "Source Sans Pro", sans-serif;
-    grid-column: 2/span 4;
-    grid-row: 2/span 1;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-  .nav a {
-    color: #242635;
-    display: block;
-    float: left;
-    margin-right: 0 1.5rem 0 0;
-    padding: 0.8rem 1.5rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-  .nav a:hover, .nav a:active {
-    color: orange;
-  }
-  a.icon {
-    display: none;
-  }
-  .text {
-    grid-column: 2/span 4;
-    grid-row: 4/span 4;
-    padding-top: 13%;
-    text-align: center;
-  }
-  .text__title {
-    font-size: 42px;
-    letter-spacing: -0.8px;
-    line-height: 42px;
-    margin-bottom: 6%;
-  }
-  .text__text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    width: 90%;
-  }
-  .image {
-    background-image: url(/images/soup-desktop.png);
-    grid-column: 6/span 4;
-    grid-row: 2/span 8;
-  }
-  .arrow {
-    align-items: flex-end;
-    bottom: -2%;
-    display: flex;
-    grid-column: 2/span 1;
-    grid-row: 9/span 1;
-    justify-content: center;
-    left: 1%;
-    max-width: 42px;
-    position: relative;
-    visibility: visible;
-  }
-  .arrow__icon {
-    color: #1C1C1C;
-    font-size: 58px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .nav {
-    grid-column: 2/span 4;
-    grid-row: 2/span 1;
-    padding-right: 1.2rem;
-  }
-  .text {
-    grid-column: 2/span 4;
-    grid-row: 4/span 4;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    padding-top: 13%;
-    text-align: center;
-  }
-  .text__title {
-    font-size: 42px;
-    letter-spacing: -0.8px;
-    line-height: 42px;
-    margin-bottom: 6%;
-  }
-  .text__text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    width: 80%;
-  }
-  .image {
-    background-image: url(/images/soup-desktop.png);
-    grid-column: 6/span 4;
-    grid-row: 2/span 8;
-  }
-  .arrow {
-    align-items: flex-end;
-    bottom: -2%;
-    display: flex;
-    grid-column: 2/span 1;
-    grid-row: 9/span 1;
-    justify-content: center;
-    left: 1%;
-    max-width: 42px;
-    position: relative;
-    visibility: visible;
-  }
-  .arrow__icon {
-    color: #1C1C1C;
-    font-size: 58px;
   }
 }
 .logo {
-  border: 1px solid red;
   align-items: center;
   color: #242635;
   display: flex;
@@ -291,9 +63,6 @@
   font-weight: 900;
   letter-spacing: -0.25px;
   line-height: 36px;
-  max-width: 90px;
-  padding-top: 2%;
-  width: 100%;
 }
 .logo a {
   color: #242635;
@@ -304,78 +73,107 @@ header {
   display: flex;
   background-color: white;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav {
-  border: 1px solid black;
   color: #242635;
   font-family: "Source Sans Pro", sans-serif;
+  background-color: #242635;
   position: fixed;
   top: 0;
   z-index: 2;
   right: -100vw;
   height: 100vh;
-  width: 50vw;
+  width: 100vw;
+  transition: transform 0.4s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
 }
 nav ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 3rem;
+  grid-column: 2/span 8;
+  grid-row: 3/span 6;
+}
+nav a {
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+nav a:hover, nav a:focus, nav a:active {
+  color: #8d8cee;
+}
+nav.responsive {
+  transform: translateX(-100%);
 }
 
 .nav {
-  border: 1px solid blue;
-  position: relative;
+  z-index: 9;
+  padding: 8px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.nav:hover, .nav:focus, .nav:active {
+  background-color: #8d8cee;
+}
+.nav:hover .nav__btn, .nav:focus .nav__btn, .nav:active .nav__btn {
+  color: white;
 }
 .nav__btn {
-  max-width: 24px;
-  width: 100%;
-  height: 24px;
+  transition: all 0.2s ease-in-out;
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 22px;
+  cursor: pointer;
+  color: black;
 }
-
-a.icon {
-  display: none;
+.nav__btn.close {
+  color: white;
+}
+.nav__btn.close:hover, .nav__btn.close:focus, .nav__btn.close:active {
+  color: #8d8cee;
 }
 
 body {
   background-color: #FFFFFF;
   font-style: normal;
-  height: 100vh;
   width: 100%;
+  min-height: 568px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
 header,
-main {
-  border: 1px solid red;
+.text,
+.image {
   grid-column: 2/span 8;
 }
 
-main {
-  grid-row: 3/span 8;
+header {
+  grid-row: 1/span 1;
 }
 
-.text__title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-}
-.text__text {
-  font-family: "Source Sans Pro", sans-serif;
+.text {
+  grid-row: 3/span 3;
 }
 
 .image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+  grid-row: 6/span 5;
 }/*# sourceMappingURL=styles.css.map */

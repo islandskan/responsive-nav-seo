@@ -6,42 +6,36 @@
 body {
     background-color: $background;
     font-style: normal;
-    height: 100vh;
     width: 100%;
+    min-height: 568px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(10, 10%);
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
 header,
-main {
-    border: 1px solid red;
+.text,
+.image {
     grid-column: 2 / span 8;
 }
 
-main {
-    grid-row: 3 / span 8;
+header {
+    grid-row: 1 / span 1;
 }
 
 .text {
-    &__title {
-        font-family: $heading;
-        font-weight: 500;
-    }
-    &__text {
-        font-family: $text;
-    }
+    grid-row: 3 / span 3;
 }
 
 .image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+    grid-row: 6 / span 5;
 }

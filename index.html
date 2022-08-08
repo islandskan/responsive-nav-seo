@@ -26,8 +26,11 @@
                     <a href="#home"><h1>Head.</h1></a>
                 </div>
                 <div class="nav">
+                    <!-- add classnames with JS, add classname .close to change to x-icon -->
                     <button class="nav__btn" id="burger-btn">
                         <i class="fas fa-ellipsis-h"></i>
+                        <!-- Change the innerHTML with JS -->
+                        <!-- <i class="fa-solid fa-xmark"></i> -->
                     </button>
                 </div>
                 <!-- Full nav menu is visible on tablet and above -->
@@ -39,22 +42,20 @@
                     </ul>
                 </nav>
             </header>
-            <main>
-                <section class="text">
-                    <h2>Recipes</h2>
-                    <p class="text__paragraph">
-                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis
-                        nec. Donec viverra eleifend lacus, vitae ullamcor.
-                    </p>
-                </section>
-                <div class="img"></div>
-                <!--Arrow is only visible in desktop mode-->
-                <div class="arrow">
-                    <a href="#">
-                        <i class="fas fa-arrow-down arrow__icon"></i>
-                    </a>
-                </div>
-            </main>
+            <section class="text">
+                <h2>Recipes</h2>
+                <p class="text__paragraph">
+                    Fusce vehicula dolor arcu, sit amet blandit dolor mollis
+                    nec. Donec viverra eleifend lacus, vitae ullamcor.
+                </p>
+            </section>
+            <div class="image"></div>
+            <!--Arrow is only visible in desktop mode-->
+            <div class="arrow">
+                <a href="#">
+                    <i class="fas fa-arrow-down arrow__icon"></i>
+                </a>
+            </div>
         </div>
 
         <script>
@@ -64,14 +65,6 @@
                 console.log(burgerBtn);
                 console.log('Yes, it works');
             });
-            // function burgerMenu() {
-            //     var burger = document.getElementById('topNav');
-            //     if (burger.className === 'nav') {
-            //         burger.className += ' responsive';
-            //     } else {
-            //         burger.className = 'nav';
-            //     }
-            // }
         </script>
     </body>
 </html>

@@ -1,7 +1,6 @@
 @use 'variables';
 
 .logo {
-    border: 1px solid red;
     align-items: center;
     color: variables.$font-color;
     display: flex;
@@ -10,9 +9,6 @@
     font-weight: 900;
     letter-spacing: -0.25px;
     line-height: 36px;
-    max-width: 90px;
-    padding-top: 2%;
-    width: 100%;
     & a {
         color: variables.$font-color;
         text-decoration: none;
