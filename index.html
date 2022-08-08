@@ -28,8 +28,6 @@
                     <!-- add classnames with JS, add classname .close to change to x-icon -->
                     <button class="nav__btn" id="burger-btn">
                         <i class="fas fa-ellipsis-h"></i>
-                        <!-- Change the innerHTML with JS -->
-                        <!-- <i class="fa-solid fa-xmark"></i> -->
                     </button>
                 </div>
                 <!-- Full nav menu is visible on tablet and above -->
@@ -59,10 +57,19 @@
 
         <script>
             const burgerBtn = document.getElementById('burger-btn');
+            const navigation = document.getElementById('nav');
+            let icon = document.querySelector('#burger-btn i');
 
             burgerBtn.addEventListener('click', () => {
-                console.log(burgerBtn);
-                console.log('Yes, it works');
+                if (navigation.classList.contains('responsive')) {
+                    navigation.classList.remove('responsive');
+                    icon.className = 'fas fa-ellipsis-h';
+                    burgerBtn.classList.remove('close');
+                } else {
+                    navigation.classList.add('responsive');
+                    icon.className = 'fa-solid fa-xmark';
+                    burgerBtn.classList.add('close');
+                }
             });
         </script>
     </body>

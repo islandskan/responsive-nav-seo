@@ -34,8 +34,7 @@ nav {
         transition: all 0.3s ease-in-out;
         color: white;
         &:hover,
-        &:focus,
-        &:active {
+        &:focus {
             color: #8d8cee;
         }
     }
@@ -47,23 +46,13 @@ nav {
 .nav {
     z-index: 9;
     padding: 8px;
-    background-color: white;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.2s ease-in-out;
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: #8d8cee;
-    }
-    &:hover .nav__btn,
-    &:focus .nav__btn,
-    &:active .nav__btn {
-        color: white;
-    }
+    // transition: all 1s ease-in-out;
     &__btn {
-        transition: all 0.2s ease-in-out;
+        transition: color 0.6s ease-in-out;
         background-color: transparent;
         border: none;
         font-size: 22px;
@@ -72,11 +61,6 @@ nav {
 
         &.close {
             color: white;
-            &:hover,
-            &:focus,
-            &:active {
-                color: #8d8cee;
-            }
         }
     }
 }
